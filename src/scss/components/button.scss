@@ -1,0 +1,37 @@
+.button {
+  display         : inline-flex;
+  outline         : none;
+  border          : 1px solid transparent;
+  box-shadow      : none;
+  align-items     : center;
+  padding         : 1.5em 4em;
+
+  font-size       : 18pt;
+  line-height     : 1;
+  text-transform  : uppercase;
+  font-weight     : bold;
+  text-decoration : none;
+
+  cursor          : pointer;
+  transition      : all .3s;
+
+  &:hover {
+    box-shadow : 0 0 10px rgba(0, 0, 0, .3);
+  }
+
+  &:active {
+    transform : translateY(5px);
+  }
+
+  &_color {
+
+    &_blue {
+
+    }
+
+    &_green {
+      background-color : #00b770;
+      color            : #fff;
+    }
+  }
+}

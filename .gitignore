@@ -1,0 +1,9 @@
+.idea
+.vscode
+
+*.log
+.env.*
+!.env.example
+
+/node_modules/
+/vendor/

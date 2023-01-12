@@ -1,0 +1,41 @@
+.section-main {
+  position   : relative;
+  background : radial-gradient(50% 50% at 50% 50%, #FFEF40 0%, #F09F13 100%);
+
+  &::before {
+    content             : '';
+    position            : absolute;
+    inset               : 0;
+    z-index             : 0;
+    background-image    : url('../img/section-main-bg.png');
+    background-size     : 55%;
+    background-repeat   : no-repeat;
+    background-position : 80% 70%;
+  }
+
+  &__wrapper {
+    position        : relative;
+    min-height      : 100vh;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    z-index         : 2;
+    align-items     : flex-start;
+  }
+
+  &__title {
+    text-transform : uppercase;
+    font-weight    : bold;
+    font-size      : 40pt;
+    line-height    : 48pt;
+    margin-bottom  : 32px;
+  }
+
+  &__description {
+    font-size     : 18pt;
+    color         : rgb(64, 64, 64);
+    line-height   : 1.333;
+    font-weight   : 300;
+    margin-bottom : 55px;
+  }
+}
