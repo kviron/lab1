@@ -6,6 +6,79 @@
   }
 
   &__header {
-    display: flex;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin-bottom   : 70px;
+  }
+
+  &__more {
+    font-size      : 15px;
+    text-transform : uppercase;
+    display        : flex;
+    align-items    : center;
+    gap            : 25px;
+    font-weight    : 600;
+  }
+
+  &__body {
+    display : flex;
+    gap     : 40px;
+  }
+
+  &__name {
+
+    .title {
+      font-size     : 18pt;
+      font-weight   : 600;
+      margin-bottom : 32px;
+    }
+
+    .date {
+      font-size   : 16px;
+      line-height : 1.7;
+    }
+  }
+
+  &__comment {
+    margin-top   : 32px;
+    padding-left : 64px;
+    padding-right : 64px;
+    position     : relative;
+
+    &::before, &::after {
+      content             : '';
+      display             : flex;
+      position            : absolute;
+      background-position : center center;
+      background-size     : contain;
+      background-repeat   : no-repeat;
+      height              : 40px;
+      width               : 40px;
+    }
+
+    &::after {
+      bottom           : -20px;
+      right            : -20px;
+      background-image : url('../img/quotes-close.png');
+    }
+
+    &::before {
+      top              : -20px;
+      left             : -20px;
+      background-image : url('../img/quotes-open.png');
+    }
+
+    .title {
+      margin-bottom  : 32px;
+      font-weight    : 600;
+      text-transform : uppercase;
+      font-size      : 18px;
+    }
+
+    .body {
+      font-size   : 16px;
+      line-height : 1.5;
+    }
   }
 }

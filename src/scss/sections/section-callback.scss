@@ -1,0 +1,25 @@
+.section-callback {
+  padding-top      : 48px;
+  padding-bottom   : 48px;
+  background-color : #efefef;
+
+  &__wrapper {
+
+  }
+
+  &__header {
+    margin-bottom : 70px;
+  }
+
+  &__body {
+    display               : grid;
+    grid-template-columns : 1fr .7fr;
+    grid-gap              : 64px;
+  }
+
+  &__desc {
+    .title {
+      margin-top : 0;
+    }
+  }
+}

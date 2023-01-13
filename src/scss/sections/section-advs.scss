@@ -7,6 +7,10 @@
     display        : flex;
     gap            : 40px;
     padding-bottom : 72px;
+    
+    @media (max-width: $md) {
+      flex-direction : column;
+    }
   }
 
   &__item {
@@ -16,13 +20,13 @@
       font-size      : 18px;
       text-transform : uppercase;
       margin-bottom  : 32px;
-      line-height: 1.333;
+      line-height    : 1.333;
     }
 
     &-desc {
       font-weight : 300;
       font-size   : 18px;
-      line-height: 1.333;
+      line-height : 1.333;
     }
   }
 

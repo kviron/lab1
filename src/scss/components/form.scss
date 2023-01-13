@@ -1,0 +1,22 @@
+.form {
+
+  &__item {
+    display       : flex;
+    margin-bottom : 20px;
+    align-items   : center;
+    gap           : 24px;
+
+    input, textarea {
+      flex : 1 1 auto;
+    }
+  }
+
+  &__form {
+
+  }
+
+  &__label {
+    min-width  : 92px;
+    text-align : right;
+  }
+}
